@@ -1,5 +1,5 @@
 {
-  "name": "shooks",
+  "name": "playground",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sunnyhooks/shooks": "workspace:^0.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

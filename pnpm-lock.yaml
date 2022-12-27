@@ -5,7 +5,7 @@ importers:
   .:
     specifiers: {}
 
-  packages/shooks:
+  packages/hooks:
     specifiers:
       '@types/react': ^18.0.26
       '@types/react-dom': ^18.0.9
@@ -15,6 +15,27 @@ importers:
       typescript: ^4.9.3
       vite: ^4.0.0
     dependencies:
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+    devDependencies:
+      '@types/react': registry.npmmirror.com/@types/react/18.0.26
+      '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.9
+      '@vitejs/plugin-react': registry.npmmirror.com/@vitejs/plugin-react/3.0.0_vite@4.0.2
+      typescript: registry.npmmirror.com/typescript/4.9.4
+      vite: registry.npmmirror.com/vite/4.0.2
+
+  playground:
+    specifiers:
+      '@sunnyhooks/shooks': workspace:^0.0.2
+      '@types/react': ^18.0.26
+      '@types/react-dom': ^18.0.9
+      '@vitejs/plugin-react': ^3.0.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      typescript: ^4.9.3
+      vite: ^4.0.0
+    dependencies:
+      '@sunnyhooks/shooks': link:../packages/hooks
       react: registry.npmmirror.com/react/18.2.0
       react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
     devDependencies:
