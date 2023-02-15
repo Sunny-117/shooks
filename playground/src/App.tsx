@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
-import { useBoolean } from '@sunnyhooks/shooks'
-console.log(useBoolean)
+import React, { useState } from "react";
+import UseMemoDemo from "./useMapDemo";
 export default function App() {
-  const [n, setN] = useState(() => {
-    return 123;
-  })
   return (
-    <div>{n}</div>
-  )
+    <div>
+      <UseMemoDemo />
+    </div>
+  );
 }
